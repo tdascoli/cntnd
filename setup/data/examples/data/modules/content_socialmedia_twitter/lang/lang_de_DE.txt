@@ -1,0 +1,13 @@
+OVERVIEW=Twitter Konfiguration
+TWITTERNAME=Twittername
+WIDTH=Breite
+HEIGHT=Höhe
+THEME=Aussehen
+LIGHT_THEME=Hell
+DARK_THEME=Dunkel
+SHOW_REPLIES=Zeige @-Replies
+LINK_COLOR=Link Farbe
+BORDER_COLOR=Rahmen Farbe
+LABEL_RELATED=Empfohlene Accounts
+RELATED_EXPLANATION=contenido, twitter, ...
+SAVE=Speichern

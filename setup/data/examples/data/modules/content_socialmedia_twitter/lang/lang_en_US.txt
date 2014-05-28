@@ -1,0 +1,13 @@
+OVERVIEW=Timeline Configuration
+TWITTERNAME=Twittername
+WIDTH=Width
+HEIGHT=Height
+THEME=Theme
+LIGHT_THEME=Light Theme
+DARK_THEME=Dark Theme
+SHOW_REPLIES=Show replies
+LINK_COLOR=Link color
+BORDER_COLOR=Border color
+LABEL_RELATED=Recommended accounts
+RELATED_EXPLANATION=contenido, twitter, ...
+SAVE=Save

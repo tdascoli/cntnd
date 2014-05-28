@@ -1,0 +1,515 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CONTENIDO FormAsistant\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-10-02 14:49+0100\n"
+"Last-Translator: Marcus Gnaß <marcus.gnass@4fb.de>\n"
+"Language-Team: Marcus Gnaß <marcus.gnass@4fb.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-KeywordsList: i18n\n"
+"X-Poedit-SearchPath-0: \n"
+
+; GENERAL exceptions
+
+msgid "INTERNAL_SERVER_ERROR"
+msgstr "Ein Fehler ist aufgetreten:"
+
+msgid "NO_PERMISSIONS"
+msgstr "keine Berechtigung"
+
+msgid "UNKNOWN_REQUEST_METHOD"
+msgstr "unbekannte Anfragemethode"
+
+msgid "UNKNOWN_ACTION"
+msgstr "unbekannte Aktion"
+
+msgid "MISSING_CLIENT"
+msgstr "Angabe zum Mandanten fehlt"
+
+msgid "MISSING_LANG"
+msgstr "Angabe zur Sprache fehlt"
+
+; FORM exceptions
+
+msgid "MISSING_IDFORM"
+msgstr "Angabe zum Formular fehlt"
+
+msgid "FORM_CREATE_ERROR"
+msgstr "Formular konnte nicht erstellt werden"
+
+msgid "FORM_LOAD_ERROR"
+msgstr "Formular konnte nicht gelesen werden"
+
+msgid "FORM_STORE_ERROR"
+msgstr "Formular konnte nicht gespeichert werden: '%s'"
+
+msgid "FORM_DELETE_ERROR"
+msgstr "Formular konnte nicht gelöscht werden"
+
+; FIELD exceptions
+
+msgid "MISSING_IDFIELD"
+msgstr "Angabe zum Feld fehlt"
+
+msgid "FIELD_LOAD_ERROR"
+msgstr "Feld konnte nicht gelesen werden"
+
+msgid "FIELD_STORE_ERROR"
+msgstr "Feld konnte nicht gespeichert werden: '%s'"
+
+msgid "FIELD_DELETE_ERROR"
+msgstr "Feld konnte nicht gelöscht werden"
+
+msgid "FIELDS_DELETE_ERROR"
+msgstr "Felder konnten nicht gelöscht werden"
+
+; TABLE exceptions
+
+msgid "MISSING_TABLE_ERROR"
+msgstr "Datentabelle existiert nicht"
+
+msgid "TABLE_CREATE_ERROR"
+msgstr "Datentabelle konnte nicht erstellt werden"
+
+msgid "TABLE_DROP_ERROR"
+msgstr "Datentabelle konnte nicht gelöscht werden"
+
+msgid "TABLE_CHECK_ERROR"
+msgstr "Existenz der Datentabelle konnte nicht geprüft werden: '%s'"
+
+msgid "TABLE_EXISTS_ERROR"
+msgstr "Datentabelle '%s' existiert bereits"
+
+msgid "USED_TABLE_NAME_ERROR"
+msgstr "Die angegebene Datentabelle existiert bereits. Bitte geben sie einen alternativen Tabellennamen an."
+
+; COLUMN exceptions
+
+msgid "COLUMN_EXISTS_ERROR"
+msgstr "Die Spalte '%s' existiert bereits."
+
+msgid "COLUMN_ADD_ERROR"
+msgstr "Spalte konnte nicht erzeugt werden"
+
+msgid "COLUMNS_LOAD_ERROR"
+msgstr "Spalte konnte nicht gelesen werden"
+
+msgid "COLUMN_ALTER_ERROR"
+msgstr "Spalte konnte nicht geändert werden"
+
+msgid "COLUMN_DROP_ERROR"
+msgstr "Spalte konnte nicht gelöscht werden"
+
+; EXTENSION exceptions
+
+msgid "MISSING_MODULE_FILE"
+msgstr "Modul-Datei '%s' fehlt"
+
+msgid "MISSING_MODULE_CLASS"
+msgstr "Modul-Klasse '%s' fehlt"
+
+msgid "MISSING_PROCESSOR_FILE"
+msgstr "Prozessor-Datei '%s' fehlt"
+
+msgid "MISSING_PROCESSOR_CLASS"
+msgstr "Prozessor-Klasse '%s' fehlt"
+
+msgid "MISSING_EOD_FILE"
+msgstr "Datei für externe Options-Datenquelle '%s' fehlt"
+
+msgid "MISSING_EOD_CLASS"
+msgstr "Klasse für externe Options-Datenquelle '%s' fehlt"
+
+; EMAIL exceptions
+
+msgid "MISSING_SENDER_ADDRESS"
+msgstr "Absender-Adresse fehlt"
+
+msgid "MISSING_SENDER_NAME"
+msgstr "Absender-Name fehlt"
+
+msgid "MISSING_RECIPIENT_ADDRESS"
+msgstr "Empfänger-Adresse fehlt"
+
+msgid "MISSING_SUBJECT"
+msgstr "Betreff fehlt"
+
+msgid "MISSING_EMAIL_BODY"
+msgstr "Nachricht fehlt"
+
+msgid "EMAIL_SEND_ERROR"
+msgstr "Email konnte nicht versendet werden"
+
+; DB exceptions
+
+msgid "DATABASE_CONNECT_ERROR"
+msgstr "Datenbank-Verbindung konnte nicht hergestellt werden"
+
+msgid "SQL_BUILD_ERROR"
+msgstr "SQL konne nicht erstellt werden"
+
+; MISC exceptions
+
+msgid "FOLDER_CREATE_ERROR"
+msgstr "Verzeichnis konnte nicht erzeugt werden"
+
+msgid "FILE_STORE_ERROR"
+msgstr "Datei konnte nicht gespeichert werden"
+
+msgid "VALUE_STORE_ERROR"
+msgstr "Werte konnten nicht gespeichert werden"
+
+msgid "EMPTY_FORMNAME_ERROR"
+msgstr "Formularname darf nicht leer sein"
+
+msgid "EMPTY_DATETABLENAME_ERROR"
+msgstr "Datentabellenname darf nicht leer sein"
+
+msgid "FORM_METHOD_ERROR"
+msgstr "Anfragemethode muß entweder GET oder POST sein"
+
+msgid "NOT_IMPLEMENTED_FIELDTYPE"
+msgstr "Feldtyp '%s' ist noch nicht implementiert"
+
+msgid "NOT_IMPLEMENTED_FIELDPROP"
+msgstr "Feldeigenschaft '%s' ist noch nicht implementiert"
+
+msgid "EXTENSION_REGEX_ERROR"
+msgstr "der Reguläre Ausdruck hat versagt, konnte den Klassennamen der PIFA-Erweiterung nicht anhand des Dateinamens ermitteln"
+
+msgid "TEMPLATE_REGEX_ERROR"
+msgstr "der Reguläre Ausdruck hat versagt, konnte den Klassennamen der PIFA-Schablone nicht anhand des Dateinamens ermitteln"
+
+msgid "READ_XML_ERROR"
+msgstr "Die XML-Datei konnte nicht gelesen werden."
+
+msgid "IMPORT_SUCCESS"
+msgstr "Das Formular wurde erfolgreich importiert."
+
+; actions
+
+msgid "pifa_show_form"
+msgstr "Formular sehen"
+
+msgid "pifa_show_fields"
+msgstr "Formularfelder sehen"
+
+msgid "pifa_show_data"
+msgstr "Formulardaten sehen"
+
+msgid "pifa_export_form"
+msgstr "Formular exportieren"
+
+msgid "pifa_import_form"
+msgstr "Formular importieren"
+
+msgid "pifa_store_form"
+msgstr "Formular speichern"
+
+msgid "pifa_delete_form"
+msgstr "Formular löschen"
+
+msgid "pifa_get_field_form"
+msgstr "Formularfeld sehen"
+
+msgid "pifa_post_field_form"
+msgstr "Formularfeld speichern"
+
+msgid "pifa_reorder_fields"
+msgstr "Formularfeld verschieben"
+
+msgid "pifa_export_data"
+msgstr "Formulardaten exportieren"
+
+msgid "pifa_get_file"
+msgstr "Datei aus Formulardaten herunterladen"
+
+msgid "pifa_delete_field"
+msgstr "Formularfeld löschen"
+
+msgid "pifa_get_option_row"
+msgstr "Formularfeldoption hinzufügen"
+
+; class.content.type.pifa_form.php
+
+msgid "form"
+msgstr "Formular"
+
+msgid "classes & templates"
+msgstr "Klassen & Vorlagen"
+
+msgid "client mail"
+msgstr "Benutzer-Mail"
+
+msgid "system mail"
+msgstr "System-Mail"
+
+msgid "none"
+msgstr "keine"
+
+msgid "module"
+msgstr "Module"
+
+msgid "processor"
+msgstr "Prozessoren"
+
+msgid "template"
+msgstr "Vorlagen"
+
+msgid "GET"
+msgstr "GET"
+
+msgid "POST"
+msgstr "POST"
+
+msgid "sender email"
+msgstr "Absender-Adresse"
+
+msgid "sender name"
+msgstr "Absender-Name"
+
+msgid "subject"
+msgstr "Betreff"
+
+; class.pifa.ajax_handler.php
+
+msgid "ID"
+msgstr "ID"
+
+msgid "RANK"
+msgstr "Rang"
+
+msgid "FIELD_TYPE"
+msgstr "Feldtyp"
+
+msgid "COLUMN_NAME"
+msgstr "Spaltenname"
+
+msgid "LABEL"
+msgstr "Beschriftung"
+
+msgid "DISPLAY_LABEL"
+msgstr "Beschriftung darstellen"
+
+msgid "DEFAULT_VALUE"
+msgstr "Standardwert"
+
+msgid "HELP_TEXT"
+msgstr "Hilfetext"
+
+msgid "VALIDATION_RULE"
+msgstr "Validierungsregel"
+
+msgid "ERROR_MESSAGE"
+msgstr "Fehlermeldung"
+
+msgid "DATABASE"
+msgstr "Datenbank"
+
+msgid "OPTIONS"
+msgstr "Optionen"
+
+msgid "GENERAL"
+msgstr "Allgemein"
+
+msgid "OBLIGATORY"
+msgstr "Pflichtfeld"
+
+msgid "VALUE"
+msgstr "Wert"
+
+msgid "ADD_OPTION"
+msgstr "Option hinzufügen"
+
+msgid "CANCEL"
+msgstr "Abbrechen"
+
+msgid "SAVE"
+msgstr "Speichern"
+
+msgid "STYLING"
+msgstr "Formatierung"
+
+msgid "CSS_CLASS"
+msgstr "CSS-Klasse"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "EXTERNAL_OPTIONS_DATASOURCE"
+msgstr "externe Datenquelle für Optionen"
+
+msgid "EDIT"
+msgstr "Bearbeiten"
+
+msgid "DELETE"
+msgstr "Löschen"
+
+; class.pifa.field.php
+
+msgid "INPUTTEXT"
+msgstr "Einzeiliges Eingabefeld"
+
+msgid "TEXTAREA"
+msgstr "Mehrzeiliges Eingabefeld"
+
+msgid "INPUTPASSWORD"
+msgstr "Passwortfeld"
+
+msgid "INPUTRADIO"
+msgstr "Radiobuttons"
+
+msgid "INPUTCHECKBOX"
+msgstr "Checkboxen"
+
+msgid "SELECT"
+msgstr "Auswahlliste"
+
+msgid "SELECTMULTI"
+msgstr "Auswahlliste mit Mehrfachauswahl"
+
+msgid "DATEPICKER"
+msgstr "Datum & Uhrzeit"
+
+msgid "INPUTFILE"
+msgstr "Dateiupload"
+
+msgid "PROCESSBAR"
+msgstr "Fortschrittsbalken"
+
+msgid "SLIDER"
+msgstr "Slider"
+
+;msgid "CAPTCHA"
+;msgstr "Captcha"
+
+msgid "BUTTONSUBMIT"
+msgstr "Absenden-Button"
+
+msgid "BUTTONRESET"
+msgstr "Abbrechen-Button"
+
+; @deprecated use BUTTON instead
+msgid "BUTTONBACK"
+msgstr "Zurück-Button"
+
+msgid "BUTTON"
+msgstr "Button"
+
+msgid "MATRIX"
+msgstr "Matrix"
+
+msgid "PARAGRAPH"
+msgstr "Absatz"
+
+msgid "INPUTHIDDEN"
+msgstr "Verstecktes Eingabefeld"
+
+msgid "FIELDSET_BEGIN"
+msgstr "Anfang einer Formularfeldgruppe"
+
+msgid "FIELDSET_END"
+msgstr "Ende einer Formularfeldgruppe"
+
+msgid "BUTTONIMAGE"
+msgstr "Bild-Button"
+
+msgid "UNKNOWN"
+msgstr "unbekannt"
+
+; class.pifa.gui.php
+
+msgid "FORM_DELETED"
+msgstr "Das Formular wurde erfolgreich gelöscht."
+
+msgid "SHOW_FORM"
+msgstr "Formular anzeigen"
+
+msgid "DELETE_FORM"
+msgstr "Formular löschen"
+
+; class.pifa.gui.php TODO check if neccessary
+
+msgid "please select a form"
+msgstr "Bitte wählen Sie ein Formular aus."
+
+msgid "form"
+msgstr "Formular"
+
+msgid "fields"
+msgstr "Formularfelder"
+
+msgid "data"
+msgstr "Formulardaten"
+
+msgid "EXPORT"
+msgstr "Export"
+
+msgid "IMPORT"
+msgstr "Import"
+
+msgid "form name"
+msgstr "Formularname"
+
+msgid "data table"
+msgstr "Datentabelle"
+
+msgid "method"
+msgstr "Anfragemethode"
+
+msgid "with timestamp"
+msgstr "mit Zeitstempel"
+
+msgid "please choose"
+msgstr "bitte auswählen"
+
+msgid "save form"
+msgstr "Formular speichern"
+
+msgid "please save first"
+msgstr "bitte erst speichern"
+
+msgid "edit form"
+msgstr "Formular bearbeiten"
+
+msgid "edit field"
+msgstr "Formularfeld bearbeiten"
+
+msgid "edit"
+msgstr "Bearbeiten"
+
+msgid "delete"
+msgstr "Löschen"
+
+msgid "CONFIRM_DELETE_FORM"
+msgstr "Wollen Sie dieses Formular wirklich löschen?"
+
+msgid "CONFIRM_DELETE_FIELD"
+msgstr "Wollen Sie dieses Feld wirklich löschen?"
+
+msgid "download data as CSV"
+msgstr "Formulardaten als CSV herunterladen"
+
+msgid "WITH_DATA"
+msgstr "mit Formulardaten"
+
+; class.pifa.product_group_options_datasource.php
+
+msgid "CHOOSE_CATEGORY"
+msgstr "Bitte wählen Sie ein Kategorie aus."
+
+; include.left_top.php
+
+msgid "CREATE_FORM"
+msgstr "Formular erstellen"
+
+msgid "CREATE_FORM_NO_PERMISSIONS"
+msgstr "Formular erstellen: keine Berechtigung"
+
+msgid "IMPORT_FORM_NO_PERMISSIONS"
+msgstr "Formular importieren: keine Berechtigung"
