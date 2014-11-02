@@ -1,9 +1,0 @@
-URL=URL
-AUTOMATIC_URL_LABEL=Use URL this article
-LOOK=look
-NORMAL=normal
-MEDIUM=medium
-TALL=tall
-DISPLAY_COUNTER=display counter
-OVERVIEW=Google Plus
-SAVE=Save

@@ -1,9 +1,0 @@
-URL=URL
-AUTOMATIC_URL_LABEL=Nutze die URL des Artikels
-LOOK=Aussehen
-NORMAL=normal
-MEDIUM=mittel
-TALL=groß
-DISPLAY_COUNTER=Zähler anzeigen
-OVERVIEW=+1-Button
-SAVE=Speichern
