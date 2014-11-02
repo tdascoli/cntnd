@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module><name>cntnd_dynlist</name><description>Dynamische Liste&#13;
+&#13;
+Autor Thomas D'Ascoli, thomas@dasco.li&#13;
+Version 2.0 18.10.2010&#13;
+        3.0 19.06.2013&#13;
+        3.1 17.12.2013 - Bildstreifen als Bildergalerie, lastKey FIX&#13;
+        3.2 24.03.2014 - CSV Upload for "export/import" sowie Bildverzeichnis wählbar bei Bild/Bildstreifen&#13;
+DEV     3.3 25.03.2014 - Eintrag am Ende einfügen / besseres verschieben?!&#13;
+</description><type>content</type><alias>cntnd_dynlist</alias></module>

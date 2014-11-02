@@ -1,0 +1,30 @@
+    table.dyn { width: 500px; }
+    table.dyn td { min-width: 30%; width: 50%; max-width: 60%; }
+    table.dyn td:first-child { width: 30%; text-align: right; }
+    select { width: 100%;}
+    .text { width: 100%; }
+    .button {
+        display: inline-block;
+        border: 0px none;
+        border-radius: 0px 0px 0px 0px;
+        outline: 0px none;
+        background: none repeat scroll 0% 0% rgb(78, 104, 199);
+        box-shadow: 1px 0px 1px rgb(32, 56, 145), 0px 1px 1px rgb(56, 82, 177), 2px 1px 1px rgb(32, 56, 145), 1px 2px 1px rgb(56, 82, 177), 3px 2px 1px rgb(32, 56, 145), 2px 3px 1px rgb(56, 82, 177), 4px 3px 1px rgb(32, 56, 145), 3px 4px 1px rgb(56, 82, 177), 5px 4px 1px rgb(32, 56, 145), 4px 5px 1px rgb(56, 82, 177), 6px 5px 1px rgb(32, 56, 145);
+        color: white;
+        white-space: nowrap;
+        font-weight: bold;
+        padding: 3px 6px;
+        margin: 10px 0;
+        text-decoration: none;
+        line-height: 1.4;
+        position: relative;
+        top: -5px;
+    }
+    .error {
+        width: 500px;
+        background: #FFD180;
+        color: black;
+        font-weight: bold;
+        margin: 5px 0 !important;
+        padding: 5px !important; 
+    }

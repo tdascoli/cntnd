@@ -1,25 +1,11 @@
 <?php
-/**
- * Module mpArticleInclude output.
- *
- * Based on Article Include v 1.0 created by Willi Man, Andreas Lindner, 4fb, B. Behrens
- *
- * @package     Module
- * @subpackage  mpArticleInclude
- * @author      Murat Purc <murat@purc.de>
- * @copyright   Copyright (c) 2011-2013 Murat Purc (http://www.purc.de)
- * @license     http://www.gnu.org/licenses/gpl-2.0.html - GNU General Public License, version 2
- * @version     $Id: mp_article_include_output.php 45 2013-11-17 17:52:31Z murat $
- */
-
-
 // Includes
-cInclude('module', 'includes/class.module.mparticleinclude.php');
+cInclude('module', 'includes/class.module.cntnd.php');
 
 // Module configuration
 $aModuleConfiguration = array(
     'debug' => false,
-    'name' => 'mpArticleInclude',
+    'name' => 'cntnd',
     'idmod' => $cCurrentModule,
     'container' => $cCurrentContainer,
 
@@ -43,7 +29,7 @@ $aModuleConfiguration = array(
 //##echo "<pre>" . print_r($aModuleConfiguration, true) . "</pre>";
 
 // Create mpArticleInclude module instance
-$oModule = new ModuleMpArticleInclude($aModuleConfiguration);
+$oModule = new ModuleCntnd($aModuleConfiguration);
 
 // Retrieve article
 if (true === $oModule->includeArticle()) {
