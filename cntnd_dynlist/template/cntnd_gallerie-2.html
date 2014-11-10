@@ -1,0 +1,23 @@
+<script language="" type="text/javascript">
+<!--
+jQuery(document).ready(function() {
+    $('#{gallery}').click(function() {
+        $.fancybox([
+        <!-- BEGIN:BLOCK -->
+        {_gallery_bild}     
+        <!-- END:BLOCK -->
+        ], {
+            'padding'           : 0,
+            'scrolling'         : 'yes',
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none',
+            'type'              : 'image',
+            'changeFade'        : 0
+        });
+    });
+});
+//-->
+</script>
+
+<a href="javascript:;" id="{gallery}"><img src="{_gallery_thumb}" /></a><br />
+{_gallery_comment}

@@ -61,6 +61,9 @@ function getExtraFields($cms_var,$type,$value){
 ?>
 <table>
 <?php
+
+// TODO config...
+
 $listname = "CMS_VALUE[0]";
 if (empty($listname)){
     $listname="dyn_list";
@@ -91,7 +94,9 @@ if (!$template OR empty($template) OR $template=="false"){
     <td>
             <select name="CMS_VAR[5]"> 
             <option value="0"> --bitte w&auml;hlen-- </option> 
-            <?php 
+            <?php
+            // TODO FUNKTION
+
             global $dirs;
             foreach ($dirs as $dir){
                 $upload_dir=substr_replace($dir,'',(strlen($dir)-1)); 
@@ -111,7 +116,7 @@ if (!$template OR empty($template) OR $template=="false"){
 <?php
 echo '<select name="CMS_VAR[1]" size="1" onchange="this.form.submit()" style="width:100%;">
             <option value="false">'.mi18n("-bitte w&auml;hlen-").'</option>'."\n";
-// TODO name des moduls...
+// TODO name des moduls... bzw. Funktion...
 $strPath_fs     = $cfgClient[$client]["module"]["path"].'cntnd_dynlist/template/';
 $optionFields   = "";
 $handle         = opendir($strPath_fs);

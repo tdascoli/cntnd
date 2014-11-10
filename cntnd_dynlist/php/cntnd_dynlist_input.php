@@ -1,6 +1,7 @@
-$sql = "SELECT DISTINCT dirname from ".$cfg["tab"]["upl"]; 
+$db=cRegistry::getDb();
+$sql = "SELECT DISTINCT dirname from ".$cfg["tab"]["upl"];
 $db->query($sql); 
-while ( $db->next_record() ) { 
+while ( $db->nextRecord() ) {
     $dirs[] = $db->f("dirname");
 }
 
@@ -31,6 +32,7 @@ function getChooseFields($cms_var,$field,$value){
                     <option value="textarea" '.$textarea.'> Eingabefeld (Mehrzeilig) </option>
                     <option value="downloadlink" '.$downloadlink.'> Link-, Downloadfeld </option>
                     <option value="image" '.$image.'> Bild / Bilderstreifen </option>
+                    <option value="gallery" '.$gallery.'> Bildergalerie (alle Bilder werden angezeigt und Kommentare) </option>
                     <option value="gallery2" '.$gallery2.'> Bildergalerie </option>
                     <option value="gallery3" '.$gallery3.'> Bildstreifen als Bildergalerie </option>
                     </select>';

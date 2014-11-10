@@ -40,7 +40,7 @@ if($contenido&&($view=="edit")){
 }
 
 if ($editmode){
-echo '<p />Dynamische Liste:<div style="border: 1px dashed silver; padding: 2px;">';
+    echo '<p />Dynamische Liste:<div style="border: 1px dashed silver; padding: 2px;">';
 }
 cInclude('module', 'includes/class.template.php');
 cInclude("includes", "functions.upl.php");
@@ -83,6 +83,10 @@ function csv_to_array($filename='', $delimiter=',')
 if (!class_exists('cntndDynList')) {
    class cntndDynList {
 
+      protected  $medien=array();
+      protected  $images=array();
+      protected  $folders=array();
+
       function cntndDynList($index,$csv_data) {
 
          global $edit, $client, $cfg, $cfgClient, $idart, $lang;
@@ -115,43 +119,56 @@ if (!class_exists('cntndDynList')) {
          // prüfen ob liste bereits vorhanden oder nicht
          
          $this->db->query("SELECT idlist FROM cntnd_dynlist WHERE listname='".$this->index."' AND idart = ".$this->idart." AND idlang = ".$this->lang);
-         if (!$this->db->next_record()){
+         if (!$this->db->nextRecord()){
              $this->db->query("INSERT INTO cntnd_dynlist (listname, idart, idlang) VALUES ('".$this->index."',".$this->idart.",".$this->lang.")");
          }
 
          // CMS_VALUE als Member aufnehmen
          $this->serialization();
-         
-         // alle arrays aufnehmen
-         $this->medien=array();
-         $this->images=array();
-         $this->folders=array();
 
-         // Dateien aus dem Dateisystem lesen
-         $this->db->query("SELECT * FROM ".$cfg['tab']['upl']." WHERE idclient='$client' AND (dirname LIKE 'pdf%' OR dirname LIKE 'excel%' OR dirname LIKE 'word%') ORDER BY dirname ASC, filename ASC");
-         while ($this->db->next_record()) {
-            $this->medien[$this->db->f('idupl')] = array ('idupl' => $this->db->f('idupl'), 'filename' => $this->db->f('dirname').$this->db->f('filename'), 'dirname' => $this->db->f('dirname'));
-         }
-         
-         // Bilder und Ordner mit Bildern aus dem Dateisystem lesen
-         $this->db->query("SELECT * FROM ".$cfg['tab']['upl']." WHERE idclient='$client' AND filetype IN ('jpeg','jpg','gif','png') ORDER BY dirname ASC, filename ASC");
-         while ($this->db->next_record()) {
-            // Bilder
-            $this->images[$this->db->f('idupl')] = array ('idupl' => $this->db->f('idupl'), 'filename' => $this->db->f('dirname').$this->db->f('filename'), 'dirname' => $this->db->f('dirname'));
-         
-            // Ordner
-            if ($prev_dir!=$this->db->f('dirname')){
-                $this->folders[$this->db->f('idupl')] = array ('idupl' => $this->db->f('idupl'), 'dirname' => $this->db->f('dirname'));
-            }
-            $prev_dir = $this->db->f('dirname');
-         }
+          // TODO FILES!!!
+          // alle arrays aufnehmen
+          /*
+          $this->medien=array();
+          $this->images=array();
+          $this->folders=array();
+          */
+          // Dateien aus dem Dateisystem lesen
+
+          $this->db->query("SELECT * FROM ".$cfg['tab']['upl']." WHERE idclient='$client' AND (dirname LIKE 'pdf%' OR dirname LIKE 'excel%' OR dirname LIKE 'word%') ORDER BY dirname ASC, filename ASC");
+          while ($this->db->nextRecord()) {
+              $this->medien[$this->db->f('idupl')] = array ('idupl' => $this->db->f('idupl'), 'filename' => $this->db->f('dirname').$this->db->f('filename'), 'dirname' => $this->db->f('dirname'));
+          }
+
+          // Bilder und Ordner mit Bildern aus dem Dateisystem lesen
+          $this->db->query("SELECT * FROM ".$cfg['tab']['upl']." WHERE idclient='$client' AND filetype IN ('jpeg','jpg','gif','png') ORDER BY dirname ASC, filename ASC");
+          while ($this->db->nextRecord()) {
+              // Bilder
+              $this->images[$this->db->f('idupl')] = array ('idupl' => $this->db->f('idupl'), 'filename' => $this->db->f('dirname').$this->db->f('filename'), 'dirname' => $this->db->f('dirname'));
+
+              // Ordner
+              if ($prev_dir!=$this->db->f('dirname')){
+                  $this->folders[$this->db->f('idupl')] = array ('idupl' => $this->db->f('idupl'), 'dirname' => $this->db->f('dirname'));
+              }
+              $prev_dir = $this->db->f('dirname');
+          }
       }
+
+       function setMedien($medien){
+        $this->medien = $medien;
+       }
+       function setImages($images){
+           $this->images = $images;
+       }
+       function setFolders($folders){
+           $this->folders = $folders;
+       }
 
       function serialization() {
         global $cfg;
          
         $this->db->query("SELECT serializeddata FROM cntnd_dynlist WHERE listname='".$this->index."' AND idart = ".$this->idart." AND idlang = ".$this->lang);
-        while ($this->db->next_record()) {
+        while ($this->db->nextRecord()) {
             if (is_string($this->db->f('serializeddata'))){
                 $this->cmsValue = unserialize($this->db->f('serializeddata'));
             }
@@ -406,7 +423,6 @@ if (!class_exists('cntndDynList')) {
                 }
                 $genField .= '</select></td></tr>';
                 break;
-            case 'gallery':
             case 'gallery2':
                 $genField .= '<tr><td>'.$field['label'].':</td><td><select '.$first_id.' name="'.$this->index.'['.$id.']['.$field['name'].'][value]">';
                 $genField .= "<option value='0'>-- kein --</option>\n";
@@ -417,6 +433,7 @@ if (!class_exists('cntndDynList')) {
                 }
                 $genField .= '</select><input type="hidden" name="'.$this->index.'['.$id.']['.$field['name'].'][viewer]" value="'.$id.'" /></td></tr>';
                 break;
+            case 'gallery':
             case 'gallery3':
                 $genField .= '<tr><td>'.$field['label'].' - Kommentar:</td><td><textarea '.$first_id.' name="'.$this->index.'['.$id.']['.$field['name'].'][value][kommentar]">'.stripslashes($value['value']['kommentar']).'</textarea></td></tr>';
                 $genField .= '<tr><td>'.$field['label'].' - Bild:</td><td><select '.$first_id.' name="'.$this->index.'['.$id.']['.$field['name'].'][value][bild]">';
@@ -552,7 +569,7 @@ if (!class_exists('cntndDynList')) {
                 default:
                         $icon="frage";
             }            
-            $img_icon   ='upload/pikto/pikto_'.$icon.'.png';
+            $img_icon   ='upload/pikto/pikto-'.$icon.'.png';
             
             
             // template ausfüllen
@@ -598,7 +615,7 @@ if (!class_exists('cntndDynList')) {
                         // SQL
                         $this->db->query("SELECT filename FROM ".$cfg["tab"]["upl"]." WHERE dirname = '".$dirname."' ORDER BY filename ");
                         $first=true;
-                        while ($this->db->next_record()) {
+                        while ($this->db->nextRecord()) {
                              if (!$first){
                                 $javascript .= ",";
                              }
@@ -633,6 +650,11 @@ if (!class_exists('cntndDynList')) {
       private function doGallery3($name,$value,$first,$count,$current){
         if (is_array($value['value'])){
             global $cfg, $client, $cfgClient;
+
+            /*				{
+            href : 'bildergalerien/beispiel/birne.jpg',
+					title : 'Es werde Licht.'
+				}, {*/
             
             if ($current==1){
                 $viewer="viewer_".$this->idart."_".$value['viewer'];
@@ -654,6 +676,27 @@ if (!class_exists('cntndDynList')) {
             $this->tpl->set('s', '_'.$name.'_thumb', "");
             $this->tpl->set('s', '_'.$name.'_comment', "");
         }
+      }
+
+      private function doGallery($name,$value,$first,$count,$current){
+           if (is_array($value['value'])){
+               global $cfg, $client, $cfgClient;
+               /*
+               $javascript='';
+               if ($current>1){
+                   $javascript = ",";
+               }
+               $javascript .= "\n{\n'href' :'".$cfgClient[$client]['upl']['htmlpath'].$value['value']['bild']."',\n'title' :'".str_replace(array("\n", "\r"), ' ', nl2br($value['value']['kommentar']))."'\n}";
+               $this->tpl->set('d', '_gallery_array', $javascript);
+               */
+               $this->tpl->set('d', 'gallery', "upload/".$value['value']['bild']);
+               $this->tpl->set('d', '_gallery_comment', str_replace(array("\n", "\r"), ' ', nl2br($value['value']['kommentar'])));
+           }
+           else {
+               //$this->tpl->set('s', $name, "");
+               $this->tpl->set('d', 'gallery', "");
+               $this->tpl->set('d', '_gallery_comment', "");
+           }
       }
       
       function genHtmlField($field,$value,$first,$count,$current){
@@ -678,7 +721,7 @@ if (!class_exists('cntndDynList')) {
                 $this->doDownloadLinkField($this->tplName($field['name']),$value);
                 break;
             case 'gallery':
-                $this->doGallery($this->tplName($field['name']),$value);
+                $this->doGallery($this->tplName($field['name']),$value,$first,$count,$current);
                 break;
             case 'gallery2':
                 $this->doGallery2($this->tplName($field['name']),$value);

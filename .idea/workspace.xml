@@ -2,33 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32705df6-e0ca-4d97-b250-4826512e11f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/php/includes/class.template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/php/includes/class.template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/php/includes/class.templateconfig.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/php/includes/class.templateconfig.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/css/cntnd_dynlist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/css/cntnd_dynlist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/js/cntnd_dynlist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/js/cntnd_dynlist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_gallerie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/template/cntnd_gallerie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_inhalt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/template/cntnd_inhalt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/css/dynamisches-listenmodul.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/js/dynamisches-listenmodul.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/lang/lang_de_CH.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_list/lang/lang_de_CH.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cntnd_content/php/includes/class.module.mparticleinclude.php" afterPath="$PROJECT_DIR$/cntnd_content/php/includes/class.module.cntnd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_content/php/cntnd_content_input.php" afterPath="$PROJECT_DIR$/cntnd_content/php/cntnd_content_input.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_content/php/cntnd_content_output.php" afterPath="$PROJECT_DIR$/cntnd_content/php/cntnd_content_output.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_bild.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_bilderstreifen-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_bilderstreifen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_gallerie-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php" afterPath="$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php" afterPath="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php" afterPath="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php" afterPath="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php" afterPath="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_gallerie.html" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_gallerie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_inhalt.html" afterPath="$PROJECT_DIR$/cntnd_dynlist/template/cntnd_inhalt.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cntnd.iws" />
@@ -93,63 +78,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="cntnd_dynlist_output.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php">
+        <entry file="file://$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5569307" vertical-offset="0" max-vertical-offset="12270">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.75382656" vertical-offset="9849" max-vertical-offset="12690">
+              <caret line="696" column="48" selection-start-line="696" selection-start-column="48" selection-end-line="696" selection-end-column="48" />
               <folding>
-                <element signature="e#6#744#0#PHP" expanded="true" />
-                <marker date="1414957005000" expanded="true" signature="1450:1490" placeholder="..." />
+                <marker date="1415540283000" expanded="true" signature="1029:1069" placeholder="..." />
+                <marker date="1415540283000" expanded="true" signature="9114:9147" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class.template.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.791667" vertical-offset="3272" max-vertical-offset="4080">
-              <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.templateconfig.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.templateconfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="4530">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cntnd_dynlist_input.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php">
+        <entry file="file://$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="1695" max-vertical-offset="2625">
-              <caret line="114" column="71" selection-start-line="114" selection-start-column="71" selection-end-line="114" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.module.dynlist.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.583333" vertical-offset="1948" max-vertical-offset="5715">
-              <caret line="150" column="23" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cntnd_content_output.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cntnd_content/php/cntnd_content_output.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="735">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="2655">
+              <caret line="34" column="117" selection-start-line="34" selection-start-column="117" selection-end-line="34" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -174,11 +119,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/cntnd_dynlist/php/dynamisches-listenmodul_input.php" />
-        <option value="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php" />
         <option value="$PROJECT_DIR$/cntnd_content/php/includes/class.module.cntnd.php" />
         <option value="$PROJECT_DIR$/cntnd_content/php/cntnd_content_output.php" />
         <option value="$PROJECT_DIR$/cntnd_content/php/cntnd_content_input.php" />
         <option value="$PROJECT_DIR$/cntnd_dynlist/php/includes/class.module.dynlist.php" />
+        <option value="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php" />
+        <option value="$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php" />
+        <option value="$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/font.css" />
+        <option value="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php" />
         <option value="$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php" />
       </list>
     </option>
@@ -186,7 +136,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP interpeter" />
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1660" />
     <option name="height" value="965" />
   </component>
@@ -216,6 +166,12 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,13 +190,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntnd_dynlist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntnd_dynlist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -254,6 +236,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -526,7 +509,9 @@
       <changelist id="32705df6-e0ca-4d97-b250-4826512e11f1" name="Default" comment="" />
       <created>1401263783408</created>
       <updated>1401263783408</updated>
-      <workItem from="1414948503537" duration="2403000" />
+      <workItem from="1414948503537" duration="4408000" />
+      <workItem from="1415007786720" duration="1371000" />
+      <workItem from="1415533046057" duration="3869000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1401264153390</created>
@@ -536,21 +521,25 @@
       <created>1414948652922</created>
       <updated>1414948652922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add dynlist old fashioned and new list...">
+      <created>1414957771919</created>
+      <updated>1414957771919</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2403000" />
+    <option name="totallyTimeSpent" value="9648000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1660" height="965" extended-state="0" />
-    <editor active="false" />
+    <frame x="10" y="23" width="1660" height="965" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -559,13 +548,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24907292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24907292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -573,6 +561,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -594,17 +583,50 @@
     </option>
     <MESSAGE value="init commit" />
     <MESSAGE value="module for contenido 4.9.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="module for contenido 4.9.4" />
+    <MESSAGE value="add dynlist old fashioned and new list..." />
+    <option name="LAST_COMMIT_MESSAGE" value="add dynlist old fashioned and new list..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="12075">
+          <caret line="129" column="26" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
+          <folding>
+            <marker date="1415540283000" expanded="true" signature="1029:1069" placeholder="..." />
+            <marker date="1415540283000" expanded="true" signature="9114:9147" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15930">
+          <caret line="988" column="16" selection-start-line="988" selection-start-column="16" selection-end-line="988" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="2280">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_dynlist/template/cntnd_inhalt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -612,73 +634,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="820">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35024753" vertical-offset="3272" max-vertical-offset="4080">
+          <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.templateconfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49330086" vertical-offset="0" max-vertical-offset="4530">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_content/php/cntnd_content_output.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018270401" vertical-offset="0" max-vertical-offset="821">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="2700">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_dynlist/template/cntnd_inhalt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03550296" vertical-offset="0" max-vertical-offset="845">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_content/php/cntnd_content_input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57549506" vertical-offset="0" max-vertical-offset="1755">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.31546894" vertical-offset="739" max-vertical-offset="1875">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49876237" vertical-offset="1142" max-vertical-offset="15930">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="121" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cntnd_content/php/includes/class.module.cntnd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.5" vertical-offset="1035" max-vertical-offset="6525">
+        <state vertical-scroll-proportion="-0.036452007" vertical-offset="765" max-vertical-offset="6525">
           <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_content/php/cntnd_content_input.php">
+    <entry file="file://$PROJECT_DIR$/font.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1755">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.05312869" vertical-offset="0" max-vertical-offset="847">
+          <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_content/php/cntnd_content_output.php">
+    <entry file="file://$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="735">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="2655">
+          <caret line="34" column="117" selection-start-line="34" selection-start-column="117" selection-end-line="34" selection-end-column="117" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.module.dynlist.php">
+    <entry file="file://$PROJECT_DIR$/cntnd_dynlist/php/cntnd_dynlist_output.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.583333" vertical-offset="1948" max-vertical-offset="5715">
-          <caret line="150" column="23" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.791667" vertical-offset="3272" max-vertical-offset="4080">
-          <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_list/php/includes/class.templateconfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="4530">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_input.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="1695" max-vertical-offset="2625">
-          <caret line="114" column="71" selection-start-line="114" selection-start-column="71" selection-end-line="114" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cntnd_list/php/cntnd_dynlist_output.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5569307" vertical-offset="0" max-vertical-offset="12270">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.75382656" vertical-offset="9849" max-vertical-offset="12690">
+          <caret line="696" column="48" selection-start-line="696" selection-start-column="48" selection-end-line="696" selection-end-column="48" />
           <folding>
-            <element signature="e#6#744#0#PHP" expanded="true" />
-            <marker date="1414957005000" expanded="true" signature="1450:1490" placeholder="..." />
+            <marker date="1415540283000" expanded="true" signature="1029:1069" placeholder="..." />
+            <marker date="1415540283000" expanded="true" signature="9114:9147" placeholder="..." />
           </folding>
         </state>
       </provider>

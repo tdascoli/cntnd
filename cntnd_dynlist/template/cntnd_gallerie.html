@@ -1,23 +1,43 @@
 <script language="" type="text/javascript">
 <!--
 jQuery(document).ready(function() {
-	$('#{gallery}').click(function() {
-		$.fancybox([
-		<!-- BEGIN:BLOCK -->
-		{_gallery_bild}		
-		<!-- END:BLOCK -->
-		], {
-			'padding'           : 0,
-			'scrolling'         : 'yes',
-			'transitionIn'      : 'none',
-			'transitionOut'     : 'none',
-			'type'              : 'image',
-			'changeFade'        : 0
-		});
-	});
+    var currentIndex=0;
+    var gallery = [
+    <!-- BEGIN:BLOCK -->
+    {_gallery_bild}     
+    <!-- END:BLOCK -->
+    ];
+    
+    $('.fancybox-image').attr('src',gallery[currentIndex].href);
+    $('.fancybox-text').text(gallery[currentIndex].title);
+    
+    $('.fancybox-prev').click(function(){
+        currentIndex--;
+        if (currentIndex<0){
+            var newIndex=gallery.length;
+            newIndex--;
+            currentIndex=newIndex;
+        }
+        $('.fancybox-image').attr('src',gallery[currentIndex].href);
+        $('.fancybox-text').text(gallery[currentIndex].title);
+    });
+    
+    $('.fancybox-next').click(function(){
+        currentIndex++;
+        if (currentIndex>=gallery.length){
+            currentIndex=0;
+        }
+        $('.fancybox-image').attr('src',gallery[currentIndex].href);
+        $('.fancybox-text').text(gallery[currentIndex].title);
+    });
 });
 //-->
 </script>
-
-<a href="javascript:;" id="{gallery}"><img src="{_gallery_thumb}" /></a><br />
-{_gallery_comment}
+<div class="fancybox-outer">
+    <div class="fancybox-inner">
+    <img class="fancybox-image" src="{_gallery_thumb}" alt="" id="{gallery}">
+    </div>
+    <a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>
+    <a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>
+</div>
+<p class="fancybox-text top5">{_gallery_comment}</p>
